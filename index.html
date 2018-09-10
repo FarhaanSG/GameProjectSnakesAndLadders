@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <title></title>
+  </head>
+  <body>
+
+    <div class ="bg">
+
+      <div class="row1 text-center">
+        <h1 class="display-1">Snakes & Ladders</h1>
+      </div>
+      <br>
+      <div class="row2 container-fluid">
+        <div class="column left col-lg-3 col-md-2 col-sm-1 text-center">
+          <h2>Player One's Dice</h2>
+          <!-- <h2 class = "playerTurn"></h2> -->
+          <!-- <div id="dice"></div> -->
+          <div id="dice1">0</div>
+          <div class="dice">
+
+          </div>
+          <button id ="p1Dice" onclick="rollDice1()" class="btn btn-primary">Roll Dice</button>
+          <h2 id="status1" style="clear:left;"></h2>
+        </div>
+
+        <div class="column middle container-fluid col-lg-6 col-md-8 col-sm-10" id = "mainDiv">
+          <div id = "table">
+            <div>
+              <div id ="106"></div>
+              <div id ="105"></div>
+              <div id ="104"></div>
+              <div id ="103"></div>
+              <div id ="102"></div>
+              <div id ="101"></div>
+            </div>
+            <div class="row">
+              <div class="a" id ="100"></div>
+              <div class="a" id ="99"></div>
+              <div class="a" id ="98"></div>
+              <div class="a" id ="97"></div>
+              <div class="a" id ="96"></div>
+              <div class="a" id ="95"></div>
+              <div class="a" id ="94"></div>
+              <div class="a" id ="93"></div>
+              <div class="a" id ="92"></div>
+              <div class="a" id ="91"></div>
+            </div>
+            <div class="row">
+              <div class="a" id ="81"></div>
+              <div class="a" id ="82"></div>
+              <div class="a" id ="83"></div>
+              <div class="a" id ="84"></div>
+              <div class="a" id ="85"></div>
+              <div class="a" id ="86"></div>
+              <div class="a" id ="87"></div>
+              <div class="a" id ="88"></div>
+              <div class="a" id ="89"></div>
+              <div class="a" id ="90"></div>
+            </div>
+            <div class="row">
+              <div class="a" id ="80"></div>
+              <div class="a" id ="79"></div>
+              <div class="a" id ="78"></div>
+              <div class="a" id ="77"></div>
+              <div class="a" id ="76"></div>
+              <div class="a" id ="75"></div>
+              <div class="a" id ="74"></div>
+              <div class="a" id ="73"></div>
+              <div class="a" id ="72"></div>
+              <div class="a" id ="71"></div>
+            </div>
+            <div class="row">
+              <div class="a" id ="61"></div>
+              <div class="a" id ="62"></div>
+              <div class="a" id ="63"></div>
+              <div class="a" id ="64"></div>
+              <div class="a" id ="65"></div>
+              <div class="a" id ="66"></div>
+              <div class="a" id ="67"></div>
+              <div class="a" id ="68"></div>
+              <div class="a" id ="69"></div>
+              <div class="a" id ="70"></div>
+            </div>
+            <div class="row">
+              <div class="a" id ="60"></div>
+              <div class="a" id ="59"></div>
+              <div class="a" id ="58"></div>
+              <div class="a" id ="57"></div>
+              <div class="a" id ="56"></div>
+              <div class="a" id ="55"></div>
+              <div class="a" id ="54"></div>
+              <div class="a" id ="53"></div>
+              <div class="a" id ="52"></div>
+              <div class="a" id ="51"></div>
+            </div>
+            <div class="row">
+              <div class="a" id ="41"></div>
+              <div class="a" id ="42"></div>
+              <div class="a" id ="43"></div>
+              <div class="a" id ="44"></div>
+              <div class="a" id ="45"></div>
+              <div class="a" id ="46"></div>
+              <div class="a" id ="47"></div>
+              <div class="a" id ="48"></div>
+              <div class="a" id ="49"></div>
+              <div class="a" id ="50"></div>
+            </div>
+            <div class="row">
+              <div class="a" id ="40"></div>
+              <div class="a" id ="39"></div>
+              <div class="a" id ="38"></div>
+              <div class="a" id ="37"></div>
+              <div class="a" id ="36"></div>
+              <div class="a" id ="35"></div>
+              <div class="a" id ="34"></div>
+              <div class="a" id ="33"></div>
+              <div class="a" id ="32"></div>
+              <div class="a" id ="31"></div>
+            </div>
+            <div class="row">
+              <div class="a" id ="21"></div>
+              <div class="a" id ="22"></div>
+              <div class="a" id ="23"></div>
+              <div class="a" id ="24"></div>
+              <div class="a" id ="25"></div>
+              <div class="a" id ="26"></div>
+              <div class="a" id ="27"></div>
+              <div class="a" id ="28"></div>
+              <div class="a" id ="29"></div>
+              <div class="a" id ="30"></div>
+            </div>
+            <div class="row">
+              <div class="a" id ="20"></div>
+              <div class="a" id ="19"></div>
+              <div class="a" id ="18"></div>
+              <div class="a" id ="17"></div>
+              <div class="a" id ="16"></div>
+              <div class="a" id ="15"></div>
+              <div class="a" id ="14"></div>
+              <div class="a" id ="13"></div>
+              <div class="a" id ="12"></div>
+              <div class="a" id ="11"></div>
+            </div>
+            <div class="row">
+              <div class="a" id ="1"></div>
+              <div class="a" id ="2"></div>
+              <div class="a" id ="3"></div>
+              <div class="a" id ="4"></div>
+              <div class="a" id ="5"></div>
+              <div class="a" id ="6"></div>
+              <div class="a" id ="7"></div>
+              <div class="a" id ="8"></div>
+              <div class="a" id ="9"></div>
+              <div class="a" id ="10"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "column right col-lg-3 col-md-2 col-sm-1 text-center">
+          <h2>Player Two's Dice</h2>
+          <div id="dice2">0</div>
+          <div class="dice"> </div>
+          <button id ="p2Dice" onclick="rollDice2()" class="btn btn-primary">Roll Dice</button>
+          <h2 id="status2" style="clear:left;"></h2>
+        </div>
+
+      </div>
+
+      <div class="row3">
+        <div class="img1">
+          <h3>Player One's Piece</h3>
+          <div class="piece1">
+            <!-- <img src="images/piece1.png" width="40" height="40"> -->
+          </div>
+        </div>
+        <div class="img2">
+          <h3>Player Two's Piece</h3>
+          <div class="piece2">
+            <!-- <img src="images/piece2.png" width="40" height="40"> -->
+          </div>
+        </div>
+
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row4">
+        <div class="jumbotron text-center">
+          <h2>Instructions</h2>
+          <p>Each player takes turns in rolling the dice and must roll a six in order to move their piece onto the board.</p>
+          <p>If a player rolls a six they are able to roll again until they do not land on a six.</p>
+          <p>Player roll one after another, unless they roll a six, and must travel down the snake if they piece land on a number with the snakes head and up the ladder if their piece lands on a number with the bottom of the ladder. </p>
+          <p>The first player to reach the 100th position is the WINNER!</p>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="./js/index.js">   </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
